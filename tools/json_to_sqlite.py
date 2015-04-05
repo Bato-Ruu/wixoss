@@ -6,6 +6,7 @@ import os
 import sys
 
 DATABASE = "cards.db"
+PREFIX = ""
 try:
     os.remove(DATABASE)
 except:
@@ -13,7 +14,7 @@ except:
 conn = sqlite3.connect(DATABASE, check_same_thread=False)
 
 c = conn.cursor()
-c.execute('CREATE TABLE IF NOT EXISTS Cards (Id INTEGER PRIMARY KEY, Name TEXT)')
+c.execute('CREATE TABLE IF NOT EXISTS Cards (Id INTEGER PRIMARY KEY, Name TEXT, Image TEXT, Back INTEGER)')
 c.execute('CREATE TABLE IF NOT EXISTS Effects (Id INTEGER PRIMARY KEY, Effect TEXT)')
 c.execute('CREATE TABLE IF NOT EXISTS Timings (Id INTEGER PRIMARY KEY, Timing TEXT)')
 c.execute('CREATE TABLE IF NOT EXISTS CardsToEffects (Id INTEGER PRIMARY KEY, Card INTEGER, Effect INTEGER)')
@@ -29,7 +30,13 @@ card_dict = json.load(card_json)
 card_json.close()
 
 for card in card_dict:
-    c.execute('INSERT OR REPLACE INTO Cards (Name) VALUES(?)', (card["Name"],))
+    image_set = card["Set"]
+    image_file = card["ImageFile"].split(",")
+    image = PREFIX + "/%s/%s.jpg" % (image_set, image_file[0])
+    back = 0
+    if len(image_file) > 1:
+        back = 1
+    c.execute('INSERT OR REPLACE INTO Cards (Name, Image, Back) VALUES(?, ?, ?)', (card["Name"], image, back))
     card_id = c.lastrowid
     if len(card["Effects"].keys()) > 0:
         for key in card["Effects"].keys():
