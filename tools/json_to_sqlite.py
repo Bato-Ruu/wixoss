@@ -33,12 +33,13 @@ for card in card_dict:
     card_id = c.lastrowid
     if len(card["Effects"].keys()) > 0:
         for key in card["Effects"].keys():
-            c.execute('SELECT * FROM Timings WHERE Timing LIKE ?', (key,))
-            (timing_id, _) = c.fetchone()
-            c.execute('INSERT INTO Effects (Effect) VALUES(?)', (card["Effects"][key],))
-            effect_id = c.lastrowid
-            c.execute('INSERT INTO TimingsToEffects (Timing, Effect) VALUES(?, ?)', (timing_id, effect_id))
-            c.execute('INSERT INTO CardsToEffects (Card, Effect) VALUES(?, ?)', (card_id, effect_id))
+            for effect in card["Effects"][key]:
+                c.execute('SELECT * FROM Timings WHERE Timing LIKE ?', (key,))
+                (timing_id, _) = c.fetchone()
+                c.execute('INSERT INTO Effects (Effect) VALUES(?)', (effect,))
+                effect_id = c.lastrowid
+                c.execute('INSERT INTO TimingsToEffects (Timing, Effect) VALUES(?, ?)', (timing_id, effect_id))
+                c.execute('INSERT INTO CardsToEffects (Card, Effect) VALUES(?, ?)', (card_id, effect_id))
     print(str(card_id) + "|" + card["Name"])
 
 conn.commit()
