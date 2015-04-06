@@ -8,7 +8,8 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    //scene = new QGraphicsScene();
+    scene = new QGraphicsScene(this);
+    ui->graphicsView->setScene(scene);
 }
 
 MainWindow::~MainWindow()
@@ -20,5 +21,5 @@ void MainWindow::on_drawButton_clicked()
 {
     Card c = Card(1);
     printf("Created new card.\n");
-    ui->graphicsView->scene()->addItem(c.getPixmapItem());
+    scene->addItem(c.getPixmapItem());
 }
