@@ -2,7 +2,6 @@
 #define CARD_H
 
 #include <QGraphicsPixmapItem>
-#include <QSql>
 #include <QPixmap>
 
 class Card
