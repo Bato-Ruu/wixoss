@@ -1,6 +1,7 @@
 #include "card.h"
 #include <stdio.h>
 #include <QtSql>
+#include <QDir>
 
 const char* Card::DATABASE = "cards.db";
 
@@ -8,7 +9,7 @@ Card::Card(int id)
 {
     this->id = id;
     QSqlDatabase db = QSqlDatabase::addDatabase("QSQLITE");
-    db.setDatabaseName(Card::DATABASE);
+    db.setDatabaseName(QDir().toNativeSeparators(Card::DATABASE));
     if(!db.open())
         printf("Ded");
     QSqlQuery query(db);
@@ -18,7 +19,7 @@ Card::Card(int id)
     name = query.value(0).toString();
     imageFile = "setimages/" + query.value(1).toString();
     isWhite = query.value(2).toInt() == 1;
-    pixmap = QPixmap(imageFile);
+    pixmap = QPixmap(QDir().toNativeSeparators(imageFile));
     if (pixmap.isNull())
         printf("lol fucked\n");
 //    pixmapItem = new QGraphicsPixmapItem(pixmap);
