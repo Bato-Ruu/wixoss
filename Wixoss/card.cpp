@@ -9,7 +9,7 @@ Card::Card(int id)
 {
     this->id = id;
     QSqlDatabase db = QSqlDatabase::addDatabase("QSQLITE");
-    db.setDatabaseName(QDir().toNativeSeparators(Card::DATABASE));
+    db.setDatabaseName(QDir::toNativeSeparators(Card::DATABASE));
     if(!db.open())
         qDebug() << "Ded\n";
     QSqlQuery query(db);
@@ -19,7 +19,7 @@ Card::Card(int id)
     name = query.value(0).toString();
     imageFile = "setimages/" + query.value(1).toString();
     isWhite = query.value(2).toInt() == 1;
-    pixmap = QPixmap(QDir().toNativeSeparators(imageFile));
+    pixmap = QPixmap(QDir::toNativeSeparators(imageFile));
     if (pixmap.isNull())
         qDebug() << "lol fucked\n";
 //    pixmapItem = new QGraphicsPixmapItem(pixmap);
