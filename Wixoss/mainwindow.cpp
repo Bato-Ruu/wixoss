@@ -1,7 +1,7 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include <card.h>
-#include <stdio.h>
+#include <QDebug>
 #include <stdlib.h>
 
 MainWindow::MainWindow(QWidget *parent) :
@@ -21,6 +21,6 @@ MainWindow::~MainWindow()
 void MainWindow::on_drawButton_clicked()
 {
     Card c = Card(rand() % 760 + 1);
-    printf("Created new card.\n");
+    qDebug() << "Created new card.\n";
     scene->addItem(c.getPixmapItem());
 }

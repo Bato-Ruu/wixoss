@@ -1,5 +1,5 @@
 #include "card.h"
-#include <stdio.h>
+#include <QDebug>
 #include <QtSql>
 #include <QDir>
 
@@ -11,7 +11,7 @@ Card::Card(int id)
     QSqlDatabase db = QSqlDatabase::addDatabase("QSQLITE");
     db.setDatabaseName(QDir().toNativeSeparators(Card::DATABASE));
     if(!db.open())
-        printf("Ded");
+        qDebug() << "Ded\n";
     QSqlQuery query(db);
     QString query_string = "SELECT Name, Image FROM Cards WHERE Id = " + QString::number(id) + ";";
     query.exec(query_string);
@@ -21,9 +21,9 @@ Card::Card(int id)
     isWhite = query.value(2).toInt() == 1;
     pixmap = QPixmap(QDir().toNativeSeparators(imageFile));
     if (pixmap.isNull())
-        printf("lol fucked\n");
+        qDebug() << "lol fucked\n";
 //    pixmapItem = new QGraphicsPixmapItem(pixmap);
-    printf("Hi from card %s.\n", name.toUtf8().data());
+    qDebug() << "Hi from card " << name << "\n";
 }
 
 QGraphicsPixmapItem* Card::getPixmapItem() {
