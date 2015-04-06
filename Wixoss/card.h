@@ -10,7 +10,7 @@ class Card
 public:
     Card(int id);
     ~Card();
-    static const char* DATABASE;
+    static const QString DATABASE;
     QPixmap pixmap;
     QGraphicsPixmapItem* getPixmapItem();
 private:

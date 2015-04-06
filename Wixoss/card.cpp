@@ -3,7 +3,7 @@
 #include <QtSql>
 #include <QDir>
 
-const char* Card::DATABASE = "cards.db";
+const QString Card::DATABASE = "cards.db";
 
 Card::Card(int id)
 {
