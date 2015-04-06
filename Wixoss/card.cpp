@@ -1,11 +1,12 @@
 #include "card.h"
 //#include <iostream>
+#include <QDebug>
 #include <QtSql>
 #include <QDir>
 #include <QTextStream>
 using namespace std;
 
-const char* Card::DATABASE = "cards.db";
+const QString Card::DATABASE = "cards.db";
 
 Card::Card(int id)
 {
@@ -22,6 +23,9 @@ Card::Card(int id)
         cout << "Database could not be found" << endl;
 
     // Query database
+
+    //db.setDatabaseName(QDir::toNativeSeparators(Card::DATABASE));
+
     QSqlQuery query(db);
 
     // Gets the card name and image from the database cards
@@ -46,7 +50,6 @@ Card::Card(int id)
 
     cout << "Hi from card " << name.toUtf8().data() << "." << endl;
     db.close();
-
 }
 
 QGraphicsPixmapItem* Card::getPixmapItem() {
