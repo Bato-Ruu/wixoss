@@ -6,12 +6,14 @@ const char* Card::DATABASE = "cards.db";
 
 Card::Card(int id)
 {
+    this->id = id;
     QSqlDatabase db = QSqlDatabase::addDatabase("QSQLITE");
     db.setDatabaseName(Card::DATABASE);
     if(!db.open())
         printf("Ded");
     QSqlQuery query(db);
-    query.exec("SELECT Name, Image FROM Cards WHERE Id = 1;");
+    QString query_string = "SELECT Name, Image FROM Cards WHERE Id = " + QString::number(id) + ";";
+    query.exec(query_string);
     query.first();
     name = query.value(0).toString();
     imageFile = "setimages/" + query.value(1).toString();
