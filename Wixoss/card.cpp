@@ -10,7 +10,8 @@ Card::Card(int id)
     qDebug() << "----- Card Constructor -----" << endl;
     this->id = id;
 
-    QString databasePath = QDir().toNativeSeparators(QDir().currentPath() + "/" + Card::DATABASE);
+    QString databasePath = QDir::toNativeSeparators(Card::DATABASE);
+    //QDir().toNativeSeparators(QDir().currentPath() + "/" + Card::DATABASE);
 
     // Makes a new database
     QSqlDatabase db = QSqlDatabase::addDatabase("QSQLITE");
@@ -27,7 +28,7 @@ Card::Card(int id)
     QSqlQuery query(db);
 
     // Gets the card name and image from the database cards
-    QString query_string = "SELECT Name, Image FROM Cards WHERE Id = " + QString::number(id) +  ";";
+    QString query_string = QString("SELECT Name, Image FROM Cards WHERE Id = %1;").arg(QString::number(id));
     query.exec(query_string);
 
     //qDebug() << "Executed Query: " << query.executedQuery() << endl;
