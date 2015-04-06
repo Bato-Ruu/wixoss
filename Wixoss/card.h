@@ -2,21 +2,22 @@
 #define CARD_H
 
 #include <QGraphicsPixmapItem>
-#include <sqlite3.h>
+#include <QSql>
+#include <QPixmap>
 
-class Card : public QGraphicsPixmapItem
+class Card
 {
 public:
     Card(int id);
     ~Card();
     static const char* DATABASE;
-
+    QPixmap pixmap;
+    QGraphicsPixmapItem* getPixmapItem();
 private:
-    sqlite3* conn;
     int id;
-    char* imageFile;
+    QString imageFile;
     bool isWhite;
-    int print_data(void* priv, char** a, char** b);
+    QString name;
 };
 
 #endif // CARD_H
