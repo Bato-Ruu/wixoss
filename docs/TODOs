@@ -7,7 +7,9 @@ Database:
     Have more separation
       Make the database record the ids of effects a card contains and handle them outside of the database
               ----Creec
-  
+    Maybe have a simple "scripting interface" to make implementation of effects faster and allow new cards to be added more easily
+        -klaxa
+    
 Miscellaneous:
 
   Custom program for inserting new cards according to decided database format
