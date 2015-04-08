@@ -1,12 +1,21 @@
 #Each todo item will be separated by one line while subsequent related ideas and the description of the issue will be 
 #   posted in the line after with indentations
 
+#IMPORTANT:
+  When completed a todo item, please move it to the Completed section at the bottom and write a small description on how it was done
+
 Final Product:
   
   How to give out executable?
     ship out dlls with the .exe? or other proposals?
 
 Database:
+
+  Issues:
+    Some cards have "image not found"
+      might be caused by an extra "\"
+    Some cards which has effect/text doesn't get displayed/query'd correctly
+      possibly caused by them not having on-play/constant/action in front of the effect description
 
   Recorded proposal for change:
     Have more separation
@@ -32,3 +41,6 @@ Miscellaneous:
     proposal:
       we can change it to a global / static global since the card database wouldn't change in the middle of the software running
     
+
+
+Completed Items:
