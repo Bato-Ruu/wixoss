@@ -1,14 +1,23 @@
 #Each todo item will be separated by one line while subsequent related ideas and the description of the issue will be 
 #   posted in the line after with indentations
 
+Final Product:
+  
+  How to give out executable?
+    ship out dlls with the .exe? or other proposals?
+
 Database:
 
   Recorded proposal for change:
     Have more separation
       Make the database record the ids of effects a card contains and handle them outside of the database
               ----Creec
+    
     Maybe have a simple "scripting interface" to make implementation of effects faster and allow new cards to be added more easily
         -klaxa
+    
+    Documentation on format used by the database
+      right now it is just 0,1,2, very unfriendly for first time readers
     
 Miscellaneous:
 
