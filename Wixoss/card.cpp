@@ -46,7 +46,11 @@ Card::Card(int id)
         qDebug() << "Image could not be found" << endl
                  << "Image File Directory: " << QDir().toNativeSeparators(imageFile) << endl;
         //pixmapItem = new QGraphicsPixmapItem(pixmap);
-
+    query_string = QString("SELECT e.Effect from Cards c, Effects e, CardsToEffects ce WHERE c.Id = ce.Card AND ce.Effect = e.Id AND c.Id = %1;").arg(QString::number(id));
+    query.exec(query_string);
+    while(query.next()) {
+        qDebug() << query.value(0).toString() << endl;
+    }
     //qDebug() << "Hi from card " << name.toUtf8().data() << "." << endl;
     db.close();
     qDebug() << "----- End of Card Constructor -----" << endl;
