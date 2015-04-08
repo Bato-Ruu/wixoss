@@ -1,0 +1,23 @@
+#Each todo item will be separated by one line while subsequent related ideas and the description of the issue will be 
+#   posted in the line after with indentations
+
+Database:
+
+  Recorded proposal for change:
+    Have more separation
+      Make the database record the ids of effects a card contains and handle them outside of the database
+              ----Creec
+  
+Miscellaneous:
+
+  Custom program for inserting new cards according to decided database format
+    Instead of writing to the .txt and converting and modifying each time, we can have a program that prompts for the required information and giving warnings for missing or invalid fields, it can also be designed to give a more visual understanding and easier control of the database
+
+  Handling of effects(on the card)
+
+  Decide on location of database initialization
+    right now there is local database declarations within the card constructor causing this message:
+      "QSqlDatabasePrivate::addDatabase: duplicate connection name 'qt_sql_default_connection', old connection removed."
+    proposal:
+      we can change it to a global / static global since the card database wouldn't change in the middle of the software running
+    
