@@ -3,6 +3,7 @@
 #include <card.h>
 #include <QDebug>
 #include <QTime>
+#include "databaseaccessor.h"
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -21,7 +22,7 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_drawButton_clicked()
 {
-    Card c = Card(qrand() % 760 + 1);
+    Card c = DatabaseAccessor::getCardById(qrand() % 760 + 1);
     qDebug() << "Created new card.\n";
     scene->addItem(c.getPixmapItem());
 }

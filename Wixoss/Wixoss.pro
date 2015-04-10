@@ -15,9 +15,11 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         mainwindow.cpp \
-    card.cpp
+    card.cpp \
+    databaseaccessor.cpp
 
 HEADERS  += mainwindow.h \
-    card.h
+    card.h \
+    databaseaccessor.h
 
 FORMS    += mainwindow.ui
