@@ -16,10 +16,12 @@ TEMPLATE = app
 SOURCES += main.cpp\
         mainwindow.cpp \
     card.cpp \
-    databaseaccessor.cpp
+    databaseaccessor.cpp \
+    playarea.cpp
 
 HEADERS  += mainwindow.h \
     card.h \
-    databaseaccessor.h
+    databaseaccessor.h \
+    playarea.h
 
 FORMS    += mainwindow.ui
