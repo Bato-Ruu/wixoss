@@ -21,19 +21,6 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
-    QGraphicsScene* handScene;
-    QGraphicsScene* mainDeckScene;
-    QGraphicsScene* lrigDeckScene;
-    QGraphicsScene* enerZoneScene;
-    QGraphicsScene* lrigZoneScene;
-    QGraphicsScene* signi1ZoneScene;
-    QGraphicsScene* signi2ZoneScene;
-    QGraphicsScene* signi3ZoneScene;
-    QGraphicsScene* lrigTrashScene;
-    QGraphicsScene* trashScene;
-    QGraphicsScene* lifeClothScene;
-    QGraphicsScene* checkZoneScene;
-
 };
 
 #endif // MAINWINDOW_H
