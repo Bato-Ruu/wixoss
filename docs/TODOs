@@ -33,6 +33,9 @@ Miscellaneous:
   Custom program for inserting new cards according to decided database format
     Instead of writing to the .txt and converting and modifying each time, we can have a program that prompts for the required information and giving warnings for missing or invalid fields, it can also be designed to give a more visual understanding and easier control of the database
 
+      Why not just convert it to a CSV format or other easily-parsed table?
+        --Lily
+        
   Handling of effects(on the card)
 
   Decide on location of database initialization
@@ -41,6 +44,12 @@ Miscellaneous:
     proposal:
       we can change it to a global / static global since the card database wouldn't change in the middle of the software running
     
-
+    
+  Ener Zone Display showing available Ener (XR, YC, etc) with Multi-Ener represented as it's own pool. Include preference option to display total.
+  
+  
+  Minimize many of the zones to hover-to-zoom and similar, to allow for better arrangement of GUI elements without sacrificing functionality
+  
+  
 
 Completed Items:
