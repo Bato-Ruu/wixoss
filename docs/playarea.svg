@@ -28,19 +28,26 @@
      borderopacity="1.0"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.45575242"
-     inkscape:cx="481.50109"
-     inkscape:cy="255.78937"
+     inkscape:zoom="1.2890625"
+     inkscape:cx="747.09987"
+     inkscape:cy="70.526636"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
-     showgrid="true"
+     showgrid="false"
      units="px"
      inkscape:window-width="1276"
      inkscape:window-height="742"
      inkscape:window-x="0"
      inkscape:window-y="37"
      inkscape:window-maximized="0"
-     borderlayer="true">
+     borderlayer="true"
+     inkscape:snap-bbox="true"
+     inkscape:snap-global="false"
+     inkscape:bbox-paths="true"
+     inkscape:bbox-nodes="true"
+     inkscape:snap-bbox-edge-midpoints="true"
+     inkscape:snap-bbox-midpoints="true"
+     inkscape:snap-page="false">
     <inkscape:grid
        type="xygrid"
        id="grid3336" />
@@ -53,7 +60,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -74,7 +81,10 @@
        width="320"
        height="720"
        x="0"
-       y="332.36243" />
+       y="332.36243">
+      <title
+         id="title3521">CardInfo</title>
+    </rect>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:52.33917999px;font-family:'Bitstream Vera Sans Mono';-inkscape-font-specification:'Bitstream Vera Sans Mono';text-align:center;text-anchor:middle;opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
@@ -97,19 +107,10 @@
        d="m 488.3,708.62645 0,303.73605 -110,0 0,-303.73605 z"
        id="rect3367"
        inkscape:connector-curvature="0"
-       sodipodi:nodetypes="ccccc" />
-    <path
-       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       d="m 553.524,1022.3625 0,-80.00005 400,0 0,80.00005 z"
-       id="rect3381"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="ccccc" />
-    <path
-       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       d="m 564.78853,1032.3624 377.47147,10e-5 0,80 -377.47147,0 z"
-       id="rect3402"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="ccccc" />
+       sodipodi:nodetypes="ccccc">
+      <title
+         id="title7081">EnerZone</title>
+    </path>
     <text
        id="text3464"
        y="-425.14893"
@@ -121,29 +122,55 @@
          x="860.06573"
          id="tspan3466"
          sodipodi:role="line">Ener zone</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22.80515671px;font-family:'Bitstream Vera Sans Mono';-inkscape-font-specification:'Bitstream Vera Sans Mono';text-align:center;text-anchor:middle;opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       x="753.33472"
-       y="990.92554"
-       id="text3468"><tspan
-         sodipodi:role="line"
-         x="753.33472"
+    <g
+       id="g3534">
+      <title
+         id="title3539">LifeCloth</title>
+      <rect
+         y="941.36243"
+         x="552.52399"
+         height="82"
+         width="402"
+         id="rect3532"
+         style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1.0" />
+      <text
+         id="text3468"
          y="990.92554"
-         id="tspan3472">Life cloth</tspan></text>
-    <text
-       id="text3476"
-       y="1080.8644"
-       x="753.81934"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22.80515671px;font-family:'Bitstream Vera Sans Mono';-inkscape-font-specification:'Bitstream Vera Sans Mono';text-align:center;text-anchor:middle;opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       xml:space="preserve"><tspan
-         id="tspan3478"
-         y="1080.8644"
+         x="753.33472"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22.80515671px;font-family:'Bitstream Vera Sans Mono';-inkscape-font-specification:'Bitstream Vera Sans Mono';text-align:center;text-anchor:middle;opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           id="tspan3472"
+           y="990.92554"
+           x="753.33472"
+           sodipodi:role="line">Life cloth</tspan></text>
+    </g>
+    <g
+       id="g3525">
+      <title
+         id="title3530">Hand</title>
+      <rect
+         y="1031.3624"
+         x="563.789"
+         height="82"
+         width="379.47101"
+         id="rect3523"
+         style="opacity:1;fill:none;fill-opacity:0.31325301;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1.0" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22.80515671px;font-family:'Bitstream Vera Sans Mono';-inkscape-font-specification:'Bitstream Vera Sans Mono';text-align:center;text-anchor:middle;opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
          x="753.81934"
-         sodipodi:role="line">Hand</tspan></text>
+         y="1080.8644"
+         id="text3476"><tspan
+           sodipodi:role="line"
+           x="753.81934"
+           y="1080.8644"
+           id="tspan3478">Hand</tspan></text>
+    </g>
     <g
        id="g5101"
        transform="translate(73.789,0)">
+      <title
+         id="title7087">SigniZone1</title>
       <rect
          y="697.36243"
          x="520"
@@ -167,81 +194,10 @@
            sodipodi:role="line">zone</tspan></text>
     </g>
     <g
-       id="g5107"
-       transform="translate(80.455687,0)">
-      <g
-         transform="translate(149.00049,0)"
-         id="g3940">
-        <path
-           id="rect3942"
-           d="m 530.99951,697.36243 79.02263,0 0,110 -79.02263,0 z"
-           style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-           inkscape:connector-curvature="0" />
-      </g>
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.21598816px;font-family:'Bitstream Vera Sans Mono';-inkscape-font-specification:'Bitstream Vera Sans Mono';text-align:center;text-anchor:middle;opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-         x="719.5155"
-         y="748.02063"
-         id="text3903"><tspan
-           sodipodi:role="line"
-           x="719.5155"
-           y="748.02063"
-           id="tspan3905">Signi</tspan><tspan
-           sodipodi:role="line"
-           x="719.5155"
-           y="769.54059"
-           id="tspan3907">zone</tspan></text>
-    </g>
-    <g
-       id="g5114"
-       transform="translate(87.122377,0)">
-      <path
-         style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-         d="m 840,697.36243 79.02263,0 0,110 -79.02263,0 z"
-         id="rect3952"
-         inkscape:connector-curvature="0" />
-      <text
-         id="text3909"
-         y="748.02063"
-         x="879.5155"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.21598816px;font-family:'Bitstream Vera Sans Mono';-inkscape-font-specification:'Bitstream Vera Sans Mono';text-align:center;text-anchor:middle;opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-         xml:space="preserve"><tspan
-           id="tspan3911"
-           y="748.02063"
-           x="879.5155"
-           sodipodi:role="line">Signi</tspan><tspan
-           id="tspan3913"
-           y="769.54059"
-           x="879.5155"
-           sodipodi:role="line">zone</tspan></text>
-    </g>
-    <g
-       id="g5120"
-       transform="translate(93.789,0)">
-      <path
-         style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-         d="m 1000,697.36243 79.0226,0 0,110 -79.0226,0 z"
-         id="rect3962"
-         inkscape:connector-curvature="0" />
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.21598816px;font-family:'Bitstream Vera Sans Mono';-inkscape-font-specification:'Bitstream Vera Sans Mono';text-align:center;text-anchor:middle;opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-         x="1039.2759"
-         y="748.02063"
-         id="text3915"><tspan
-           sodipodi:role="line"
-           x="1039.2759"
-           y="748.02063"
-           id="tspan3919">Main</tspan><tspan
-           id="tspan3959"
-           sodipodi:role="line"
-           x="1039.2759"
-           y="769.54059">deck</tspan></text>
-    </g>
-    <g
        id="g5126"
        transform="translate(73.789,0)">
+      <title
+         id="title3513">CheckZone</title>
       <rect
          style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
          id="rect3983"
@@ -263,102 +219,6 @@
            y="889.54059"
            x="559.05316"
            sodipodi:role="line">zone</tspan></text>
-    </g>
-    <g
-       id="g5132"
-       transform="translate(80.455687,0)">
-      <g
-         id="g3991"
-         transform="translate(149.00049,120.00002)">
-        <path
-           id="rect3993"
-           d="m 530.99951,697.36243 79.02263,0 0,110 -79.02263,0 z"
-           style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-           inkscape:connector-curvature="0" />
-        <g
-           id="text3995"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.21598816px;font-family:'Bitstream Vera Sans Mono';-inkscape-font-specification:'Bitstream Vera Sans Mono';text-align:center;text-anchor:middle;opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-      </g>
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.21598816px;font-family:'Bitstream Vera Sans Mono';-inkscape-font-specification:'Bitstream Vera Sans Mono';text-align:center;text-anchor:middle;opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-         x="719.16248"
-         y="868.02063"
-         id="text3927"><tspan
-           sodipodi:role="line"
-           x="719.16248"
-           y="868.02063"
-           id="tspan3931">Lrig</tspan><tspan
-           id="tspan3971"
-           sodipodi:role="line"
-           x="719.16248"
-           y="889.54059">zone</tspan></text>
-    </g>
-    <g
-       id="g5140"
-       transform="translate(87.122374,0)">
-      <path
-         style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-         d="m 840,817.36245 79.02263,0 0,110 -79.02263,0 z"
-         id="rect4003"
-         inkscape:connector-curvature="0" />
-      <text
-         id="text3933"
-         y="868.02063"
-         x="879.12042"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.21598816px;font-family:'Bitstream Vera Sans Mono';-inkscape-font-specification:'Bitstream Vera Sans Mono';text-align:center;text-anchor:middle;opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-         xml:space="preserve"><tspan
-           id="tspan3937"
-           y="868.02063"
-           x="879.12042"
-           sodipodi:role="line">Lrig</tspan><tspan
-           id="tspan3975"
-           y="889.54059"
-           x="879.12042"
-           sodipodi:role="line">deck</tspan></text>
-    </g>
-    <g
-       id="g5146"
-       transform="translate(193.789,-120)">
-      <path
-         style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-         d="m 1000,817.36245 79.0226,0 0,110 -79.0226,0 z"
-         id="rect4013"
-         inkscape:connector-curvature="0" />
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.21598816px;font-family:'Bitstream Vera Sans Mono';-inkscape-font-specification:'Bitstream Vera Sans Mono';text-align:center;text-anchor:middle;opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-         x="1040.0745"
-         y="878.78064"
-         id="text3939"><tspan
-           sodipodi:role="line"
-           x="1040.0745"
-           y="878.78064"
-           id="tspan3943">Trash</tspan></text>
-    </g>
-    <g
-       id="g5151"
-       transform="translate(33.789,0)">
-      <path
-         style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-         d="m 1160,817.36245 79.023,0 -4e-4,110 -79.0226,0 z"
-         id="rect4023"
-         inkscape:connector-curvature="0"
-         sodipodi:nodetypes="ccccc" />
-      <text
-         id="text3945"
-         y="868.02063"
-         x="1199.7214"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.21598816px;font-family:'Bitstream Vera Sans Mono';-inkscape-font-specification:'Bitstream Vera Sans Mono';text-align:center;text-anchor:middle;opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-         xml:space="preserve"><tspan
-           id="tspan3949"
-           y="868.02063"
-           x="1199.7214"
-           sodipodi:role="line">Lrig</tspan><tspan
-           id="tspan3981"
-           y="889.54059"
-           x="1199.7214"
-           sodipodi:role="line">trash</tspan></text>
     </g>
     <rect
        y="-692.36249"
@@ -637,6 +497,199 @@
            x="1199.7214"
            y="889.54059"
            id="tspan6965">trash</tspan></text>
+    </g>
+    <g
+       transform="translate(240.456,0)"
+       id="g7103">
+      <title
+         id="title7105">SigniZone2</title>
+      <rect
+         style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="rect7107"
+         width="79.022629"
+         height="110"
+         x="520"
+         y="697.36243" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.21598816px;font-family:'Bitstream Vera Sans Mono';-inkscape-font-specification:'Bitstream Vera Sans Mono';text-align:center;text-anchor:middle;opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         x="559.5155"
+         y="748.02063"
+         id="text7109"><tspan
+           sodipodi:role="line"
+           x="559.5155"
+           y="748.02063"
+           id="tspan7111">Signi</tspan><tspan
+           sodipodi:role="line"
+           x="559.5155"
+           y="769.54059"
+           id="tspan7113">zone</tspan></text>
+    </g>
+    <g
+       id="g7115"
+       transform="translate(407.122,0)">
+      <title
+         id="title7117">SigniZone3</title>
+      <rect
+         y="697.36243"
+         x="520"
+         height="110"
+         width="79.022629"
+         id="rect7119"
+         style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <text
+         id="text7121"
+         y="748.02063"
+         x="559.5155"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.21598816px;font-family:'Bitstream Vera Sans Mono';-inkscape-font-specification:'Bitstream Vera Sans Mono';text-align:center;text-anchor:middle;opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           id="tspan7123"
+           y="748.02063"
+           x="559.5155"
+           sodipodi:role="line">Signi</tspan><tspan
+           id="tspan7125"
+           y="769.54059"
+           x="559.5155"
+           sodipodi:role="line">zone</tspan></text>
+    </g>
+    <g
+       transform="translate(573.789,0)"
+       id="g7127">
+      <title
+         id="title7129">MainDeck</title>
+      <rect
+         style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="rect7131"
+         width="79.022629"
+         height="110"
+         x="520"
+         y="697.36243" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.21598816px;font-family:'Bitstream Vera Sans Mono';-inkscape-font-specification:'Bitstream Vera Sans Mono';text-align:center;text-anchor:middle;opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         x="559.5155"
+         y="748.02063"
+         id="text7133"><tspan
+           sodipodi:role="line"
+           x="559.5155"
+           y="748.02063"
+           id="tspan7137">Main</tspan><tspan
+           sodipodi:role="line"
+           x="559.5155"
+           y="769.54059"
+           id="tspan7143">deck</tspan></text>
+    </g>
+    <g
+       id="g7147"
+       transform="translate(673.789,0)">
+      <title
+         id="title7149">Trash</title>
+      <rect
+         y="697.36243"
+         x="520"
+         height="110"
+         width="79.022629"
+         id="rect7151"
+         style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <text
+         id="text7153"
+         y="758.78058"
+         x="559.5155"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.21598816px;font-family:'Bitstream Vera Sans Mono';-inkscape-font-specification:'Bitstream Vera Sans Mono';text-align:center;text-anchor:middle;opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           id="tspan7157"
+           y="758.78058"
+           x="559.5155"
+           sodipodi:role="line">Trash</tspan></text>
+    </g>
+    <g
+       transform="translate(240.456,0)"
+       id="g3470">
+      <title
+         id="title3515">LrigZone</title>
+      <rect
+         y="817.36243"
+         x="520"
+         height="110"
+         width="79.022629"
+         id="rect3472"
+         style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.21598816px;font-family:'Bitstream Vera Sans Mono';-inkscape-font-specification:'Bitstream Vera Sans Mono';text-align:center;text-anchor:middle;opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         x="559.05316"
+         y="868.02063"
+         id="text3474"><tspan
+           sodipodi:role="line"
+           x="559.05316"
+           y="868.02063"
+           id="tspan3479">Lrig</tspan><tspan
+           sodipodi:role="line"
+           x="559.05316"
+           y="889.54059"
+           id="tspan3493">zone</tspan></text>
+    </g>
+    <g
+       id="g3481"
+       transform="translate(407.122,0)">
+      <title
+         id="title3517">LrigDeck</title>
+      <rect
+         style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="rect3483"
+         width="79.022629"
+         height="110"
+         x="520"
+         y="817.36243" />
+      <text
+         id="text3485"
+         y="868.02063"
+         x="559.05316"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.21598816px;font-family:'Bitstream Vera Sans Mono';-inkscape-font-specification:'Bitstream Vera Sans Mono';text-align:center;text-anchor:middle;opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           id="tspan3489"
+           y="868.02063"
+           x="559.05316"
+           sodipodi:role="line">Lrig</tspan><tspan
+           y="889.54059"
+           x="559.05316"
+           sodipodi:role="line"
+           id="tspan3497">deck</tspan><tspan
+           y="911.06061"
+           x="559.05316"
+           sodipodi:role="line"
+           id="tspan3499" /></text>
+    </g>
+    <g
+       transform="translate(673.789,0)"
+       id="g3501">
+      <title
+         id="title3519">LrigTrash</title>
+      <rect
+         y="817.36243"
+         x="520"
+         height="110"
+         width="79.022629"
+         id="rect3503"
+         style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.21598816px;font-family:'Bitstream Vera Sans Mono';-inkscape-font-specification:'Bitstream Vera Sans Mono';text-align:center;text-anchor:middle;opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         x="559.05316"
+         y="868.02063"
+         id="text3505"><tspan
+           sodipodi:role="line"
+           x="559.05316"
+           y="868.02063"
+           id="tspan3507">Lrig</tspan><tspan
+           id="tspan3509"
+           sodipodi:role="line"
+           x="559.05316"
+           y="889.54059">trash</tspan><tspan
+           id="tspan3511"
+           sodipodi:role="line"
+           x="559.05316"
+           y="911.06061" /></text>
     </g>
   </g>
 </svg>
