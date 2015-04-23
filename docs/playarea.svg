@@ -28,9 +28,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.2890625"
-     inkscape:cx="747.09987"
-     inkscape:cy="70.526636"
+     inkscape:zoom="0.45575242"
+     inkscape:cx="1259.6237"
+     inkscape:cy="88.017082"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -70,7 +70,7 @@
      id="layer1"
      transform="translate(0,-332.36245)">
     <path
-       style="opacity:1;fill:#1dff03;fill-opacity:0.17194571;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       style="opacity:1;fill:#1dff03;fill-opacity:0.17194573;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        d="m 0,1052.3625 1280,0 0,-720.00005 -1280,0 z"
        id="rect4133"
        inkscape:connector-curvature="0"
@@ -102,26 +102,6 @@
        height="360"
        x="320.00101"
        y="692.36243" />
-    <path
-       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       d="m 488.3,708.62645 0,303.73605 -110,0 0,-303.73605 z"
-       id="rect3367"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="ccccc">
-      <title
-         id="title7081">EnerZone</title>
-    </path>
-    <text
-       id="text3464"
-       y="-425.14893"
-       x="860.06573"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22.80515671px;font-family:'Bitstream Vera Sans Mono';-inkscape-font-specification:'Bitstream Vera Sans Mono';text-align:center;text-anchor:middle;opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       xml:space="preserve"
-       transform="matrix(0,1,-1,0,0,0)"><tspan
-         y="-425.14893"
-         x="860.06573"
-         id="tspan3466"
-         sodipodi:role="line">Ener zone</tspan></text>
     <g
        id="g3534">
       <title
@@ -132,7 +112,7 @@
          height="82"
          width="402"
          id="rect3532"
-         style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1.0" />
+         style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
       <text
          id="text3468"
          y="990.92554"
@@ -154,7 +134,7 @@
          height="82"
          width="379.47101"
          id="rect3523"
-         style="opacity:1;fill:none;fill-opacity:0.31325301;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1.0" />
+         style="opacity:1;fill:none;fill-opacity:0.31325301;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
       <text
          xml:space="preserve"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22.80515671px;font-family:'Bitstream Vera Sans Mono';-inkscape-font-specification:'Bitstream Vera Sans Mono';text-align:center;text-anchor:middle;opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
@@ -690,6 +670,29 @@
            sodipodi:role="line"
            x="559.05316"
            y="911.06061" /></text>
+    </g>
+    <g
+       id="g3491">
+      <title
+         id="title3496">EnerZone</title>
+      <text
+         transform="matrix(0,1,-1,0,0,0)"
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22.80515671px;font-family:'Bitstream Vera Sans Mono';-inkscape-font-specification:'Bitstream Vera Sans Mono';text-align:center;text-anchor:middle;opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         x="860.06573"
+         y="-425.14893"
+         id="text3464"><tspan
+           sodipodi:role="line"
+           id="tspan3466"
+           x="860.06573"
+           y="-425.14893">Ener zone</tspan></text>
+      <rect
+         y="707.6264"
+         x="377.29999"
+         height="305.73599"
+         width="112"
+         id="rect3486"
+         style="opacity:1;fill:none;fill-opacity:0.31325301;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
     </g>
   </g>
 </svg>

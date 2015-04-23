@@ -14,6 +14,10 @@ const QString DatabaseAccessor::DATABASE = QDir::toNativeSeparators("cards.db");
 QSqlDatabase DatabaseAccessor::db = QSqlDatabase::addDatabase("QSQLITE");
 
 Card DatabaseAccessor::getCardById(int id) {
+    if (id == 0) {
+        Card c(0, "Blank", "", false);
+        return c;
+    }
     QSqlQuery query(DatabaseAccessor::db);
 
     // Gets the card name and image from the database cards

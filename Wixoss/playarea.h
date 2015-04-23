@@ -2,23 +2,31 @@
 #define PLAYAREA_H
 #include <vector>
 #include "card.h"
+#include "stack.h"
+#include <QGraphicsScene>
 
 class PlayArea
 {
 public:
     PlayArea();
     ~PlayArea();
+    void init();
+    QGraphicsScene* getScene();
+    void setScene(QGraphicsScene* s);
+    void repaint(QString stack);
+    void setLayout(QString filename);
+    Stack* getPlayerStack(QString stack);
+    Stack* getOpponentStack(QString stack);
+    static const QString stackNames[];
 private:
-    std::vector<Card> hand;
-    std::vector<Card> mainDeck;
-    std::vector<Card> lrigDeck;
-    std::vector<Card> enerZone;
-    std::vector<Card> lrigZone;
-    std::vector<Card> signiZone;
-    std::vector<Card> lrigTrash;
-    std::vector<Card> trash;
-    std::vector<Card> lifeCloth;
-    std::vector<Card> checkZone;
+    qreal scaleX;
+    qreal scaleY;
+    qreal scale;
+    qreal minHeight;
+    std::map<QString, Stack*> playerStacks;
+    std::map<QString, Stack*> opponentStacks;
+    QGraphicsScene* scene;
 };
+
 
 #endif // PLAYAREA_H

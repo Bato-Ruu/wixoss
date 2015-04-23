@@ -3,19 +3,24 @@
 
 #include <QGraphicsPixmapItem>
 #include <QPixmap>
-
 class Card
 {
 public:
+    static const QString WHITE;
+    static const QString BLACK;
+    Card();
     Card(int id, QString name, QString imageFile, bool isWhite);
     ~Card();
-    QPixmap pixmap;
-    QGraphicsPixmapItem* getPixmapItem();
-private:
+    virtual QPixmap* getPixmap();
+    int getId();
+    QString getName();
+    bool isWhite();
+protected:
+    QPixmap* face;
     int id;
     QString imageFile;
     QString name;
-    bool isWhite;
+    bool _isWhite;
 };
 
 #endif // CARD_H

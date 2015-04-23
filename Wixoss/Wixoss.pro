@@ -17,11 +17,15 @@ SOURCES += main.cpp\
         mainwindow.cpp \
     card.cpp \
     databaseaccessor.cpp \
-    playarea.cpp
+    playarea.cpp \
+    stack.cpp \
+    inplaycard.cpp
 
 HEADERS  += mainwindow.h \
     card.h \
     databaseaccessor.h \
-    playarea.h
+    playarea.h \
+    stack.h \
+    inplaycard.h
 
 FORMS    += mainwindow.ui

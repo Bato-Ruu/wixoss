@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include <QGraphicsScene>
+#include "playarea.h"
 
 namespace Ui {
 class MainWindow;
@@ -18,9 +19,12 @@ public:
 
 private slots:
     void on_drawButton_clicked();
+    void on_pushButton_clicked();
+    void resizeEvent(QResizeEvent *event);
 
 private:
     Ui::MainWindow *ui;
+    PlayArea* pa;
 };
 
 #endif // MAINWINDOW_H
