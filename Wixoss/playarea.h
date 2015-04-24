@@ -13,11 +13,12 @@ public:
     void init();
     QGraphicsScene* getScene();
     void setScene(QGraphicsScene* s);
-    void repaint(QString stack);
+    void repaint(Stack* stack);
     void setLayout(QString filename);
     Stack* getPlayerStack(QString stack);
     Stack* getOpponentStack(QString stack);
     static const QString stackNames[];
+    void repaintAll();
 private:
     qreal scaleX;
     qreal scaleY;
@@ -26,7 +27,7 @@ private:
     std::map<QString, Stack*> playerStacks;
     std::map<QString, Stack*> opponentStacks;
     QGraphicsScene* scene;
+    QGraphicsRectItem* field;
+
 };
-
-
 #endif // PLAYAREA_H

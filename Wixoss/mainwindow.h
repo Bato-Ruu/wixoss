@@ -18,8 +18,6 @@ public:
     ~MainWindow();
 
 private slots:
-    void on_drawButton_clicked();
-    void on_pushButton_clicked();
     void resizeEvent(QResizeEvent *event);
 
 private:

@@ -23,8 +23,12 @@ void PlayArea::init() {
     setLayout(QString("res/layout.xml"));
     QPen p(QColor(255, 255, 255, 255));
     QBrush b(QColor(0, 120, 80, 155));
-    scene->addRect(0, 0, 1280, 720, p, b);
-    scene->addLine(320, 0, 320, 720, p);
+    field = new QGraphicsRectItem(0, 0, 1280, 720);
+    scene->addItem(field);
+    field->setBrush(b);
+    field->setPen(p);
+    QGraphicsLineItem* line = new QGraphicsLineItem(320, 0, 320, 720, field);
+    line->setPen(p);
     Card testCard = DatabaseAccessor::getCardById(1);
     scale = (((float) getPlayerStack("LrigZone")->getHeight()) / ((float) testCard.getPixmap()->height()));
     qDebug() << getPlayerStack("LrigZone")->getHeight() << scale << testCard.getPixmap()->height();
@@ -37,13 +41,13 @@ void PlayArea::init() {
         InPlayCard c(testCard);
         Stack* zone = getPlayerStack(pstack);
         zone->getVector()->push_back(c);
-        repaint(pstack);
+        repaint(zone);
         InPlayCard c2(testCard);
         c2.faceDown();
         c2.setRotated(true);
         zone = getOpponentStack(ostack);
         zone->getVector()->push_back(c2);
-        repaint(ostack);
+        repaint(zone);
     }
 }
 
@@ -55,45 +59,18 @@ void PlayArea::setScene(QGraphicsScene* scene) {
     this->scene = scene;
 }
 
-void PlayArea::repaint(QString stack) {
-    QGraphicsView* canvas = scene->views().at(0);
-    canvas->resetTransform();
-    scaleX = canvas->width() / 1280.f;
-    scaleY = canvas->height() / 720.f;
-    qreal offsetX = (1280.f - scaleX * 1280.f) / 2;
-    qreal offsetY = (720.f - scaleY * 720.f) / 2;
-    qreal cscale = std::min(scaleX, scaleY);
-    qDebug() << offsetX << offsetY;
-    canvas->scale(cscale, cscale);
-    canvas->translate(offsetX, offsetY);
-    Stack* p = getPlayerStack(stack);
-    Stack* o = getOpponentStack(stack);
+void PlayArea::repaint(Stack* stack) {
     QGraphicsPixmapItem* pi;
-    std::vector<InPlayCard>* c = p->getVector();
-    std::vector<InPlayCard>* co = o->getVector();
+    std::vector<InPlayCard>* c = stack->getVector();
     for (InPlayCard &i : *c) {
-        qDebug() << "Repainting card";
-        qDebug() << p->getWidth() << "," << p->getHeight();
-        qDebug() << p->getX() << "," << p->getY();
+        //qDebug() << "Repainting card";
+        //qDebug() << stack->getWidth() << "," << stack->getHeight();
+        //qDebug() << stack->getX() << "," << stack->getY();
         int x = (int) (i.getPixmap()->width() * scale);
         int y = (int) (i.getPixmap()->height() * scale);
-        pi = new QGraphicsPixmapItem(i.getPixmap()->scaled(x, y, Qt::KeepAspectRatio, Qt::SmoothTransformation));
-        pi->setPos(p->getX() - p->getWidth() / 2, p->getY() - p->getHeight() / 2);
-        scene->addItem(pi);
-    }
-
-    for (InPlayCard &i : *co) {
-        qDebug() << "Repainting card";
-        qDebug() << o->getWidth() << "," << o->getHeight();
-        qDebug() << o->getX() << "," << o->getY();
-        //min = std::min(o->getWidth(), o->getHeight());
-        int x = (int) (i.getPixmap()->width() * scale);
-        int y = (int) (i.getPixmap()->height() * scale);
-        qDebug() << minHeight << scale;
-        pi = new QGraphicsPixmapItem(i.getPixmap()->scaled(x, y, Qt::KeepAspectRatio, Qt::SmoothTransformation));
-        pi->setPos(o->getX() - o->getWidth() / 2, o->getY() - o->getHeight() / 2);
-        //pi->setFlag(QGraphicsItem::ItemIsMovable);
-        scene->addItem(pi);
+        pi = new QGraphicsPixmapItem(i.getPixmap()->scaled(x, y, Qt::KeepAspectRatio, Qt::SmoothTransformation), field);
+        pi->setPos(stack->getX() - stack->getWidth() / 2, stack->getY() - stack->getHeight() / 2);
+        //scene->addItem(pi);
     }
 }
 
@@ -163,4 +140,34 @@ Stack* PlayArea::getPlayerStack(QString stack)
 Stack* PlayArea::getOpponentStack(QString stack)
 {
     return opponentStacks[stack];
+}
+
+void PlayArea::repaintAll()
+{
+    QGraphicsView* canvas = scene->views().at(0);
+    canvas->resetTransform();
+    scaleX = canvas->width() / 1280.f;
+    scaleY = canvas->height() / 720.f;
+    qreal cscale = std::min(scaleX, scaleY);
+    canvas->scale(cscale, cscale);
+    qreal offsetX = (1280.f - 1280.f * cscale) / 2;
+    qreal offsetY = (720.f - 720.f * cscale) / 2;
+    if (offsetX > offsetY) {
+        offsetY = 0;
+    } else {
+        offsetX = 0;
+    }
+    qDebug() << "scale" << cscale << "offsets" << offsetX << offsetY;
+    field->setX(offsetX);
+    field->setY(offsetY);
+    Stack* zone;
+    QString pstack, ostack;
+    for (int i = 0; i < 12; i++) {
+        pstack = PlayArea::stackNames[i];
+        ostack = PlayArea::stackNames[11 - i];
+        zone = getPlayerStack(pstack);
+        repaint(zone);
+        zone = getOpponentStack(ostack);
+        repaint(zone);
+    }
 }
